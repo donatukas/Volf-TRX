@@ -2,7 +2,7 @@
 DDC-DUC SDR Tranceiver project https://ua3reo.ru/tag/transiver-ua3reo/
 
 * Community telegram channel: https://t.me/TRX_Wolf
-* На русском https://github.com/donatukas/Volf-TRX/README.ru-RU.md
+* На русском https://github.com/donatukas/Volf-TRX/blob/main/README.ru-RU.md
 
 ## Principle of operation
 
