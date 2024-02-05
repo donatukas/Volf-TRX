@@ -1,0 +1,35 @@
+LR_IROM1 0x08000000 0x00100000  {    ; load region size_region
+  ER_IROM1 0x08000000 0x00100000  {  ; load address = execution address ; 2mb FLASH (1mb + 1mb for update)
+   *.o (RESET, +First)
+   *(InRoot$$Sections)
+   .ANY (+RO)
+   .ANY (+XO)
+  }
+  
+  ;RO_ITCM 0x00000000 0x00010000  { ;64kb ITCM
+   ;*(.ITCM +XO)
+  ;}
+  
+  REGION_STACK 0x20000000 {
+    *(STACK)
+  }
+  REGION_HEAP (0x20000000 + 0x00020000 - 0x000) { ; heap size
+    *(HEAP)
+  }
+  RW_IRAM1 ImageLimit(REGION_STACK) (0x00020000 - ImageLength(REGION_STACK) - ImageLength(REGION_HEAP))  {  ;128kb DTCM 
+   *(+RW +ZI)
+  }
+  
+  RW_IRAM2 0x24000000 0x00080000  { ;512kb AXI SRAM
+   *(.IRAM)
+  }
+  SRAM 0x30000000 0x00048000  { ;SRAM1+SRAM2+SRAM3 128kb+128kb+32kb
+   *(.SRAM)
+  }
+  SRAM4 0x38000000 0x00010000  { ;64kb
+   *(.SRAM4)
+  }
+  ;BACKUP_SRAM 0x38800000 0x00001000  { ;4kb Backup SRAM
+   ;*(.BACKUP_SRAM)
+  ;}
+}

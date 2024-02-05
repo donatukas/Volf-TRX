@@ -1,0 +1,9 @@
+constParameter
+constParameterPointer
+duplicateAssignExpression
+invalidPrintfArgType_sint
+missingInclude
+missingIncludeSystem
+sizeofDereferencedVoidPointer
+sizeofwithnumericparameter
+variableScope

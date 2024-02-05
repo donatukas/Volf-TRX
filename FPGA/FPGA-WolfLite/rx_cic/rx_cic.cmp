@@ -1,0 +1,21 @@
+	component rx_cic is
+		port (
+			in_error          : in  std_logic_vector(1 downto 0)  := (others => 'X'); -- error
+			in_valid          : in  std_logic                     := 'X';             -- valid
+			in_ready          : out std_logic;                                        -- ready
+			in0_data          : in  std_logic_vector(26 downto 0) := (others => 'X'); -- in0_data
+			in1_data          : in  std_logic_vector(26 downto 0) := (others => 'X'); -- in1_data
+			out_data          : out std_logic_vector(31 downto 0);                    -- out_data
+			out_error         : out std_logic_vector(1 downto 0);                     -- error
+			out_valid         : out std_logic;                                        -- valid
+			out_ready         : in  std_logic                     := 'X';             -- ready
+			out_startofpacket : out std_logic;                                        -- startofpacket
+			out_endofpacket   : out std_logic;                                        -- endofpacket
+			out_channel       : out std_logic;                                        -- channel
+			clken             : in  std_logic                     := 'X';             -- clken
+			clk               : in  std_logic                     := 'X';             -- clk
+			rate              : in  std_logic_vector(9 downto 0)  := (others => 'X'); -- conduit
+			reset_n           : in  std_logic                     := 'X'              -- reset_n
+		);
+	end component rx_cic;
+

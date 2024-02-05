@@ -1,0 +1,6 @@
+Record=TopLevelDocument|FileName=Codec.SchDoc|SheetNumber=4
+Record=NoMainPathDocument|SourceDocument=Codec.SchDoc|FileName=Conn.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=Codec.SchDoc|FileName=Control.SchDoc|SheetNumber=6
+Record=NoMainPathDocument|SourceDocument=Codec.SchDoc|FileName=LCD.SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=Codec.SchDoc|FileName=Power.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=Codec.SchDoc|FileName=STM32.SchDoc|SheetNumber=5

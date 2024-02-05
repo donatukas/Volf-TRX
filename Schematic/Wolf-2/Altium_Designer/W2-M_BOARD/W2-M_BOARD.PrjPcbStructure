@@ -1,0 +1,7 @@
+Record=TopLevelDocument|FileName=MB_ADC.SchDoc|SheetNumber=4
+Record=NoMainPathDocument|SourceDocument=MB_ADC.SchDoc|FileName=MB_Conn.SchDoc|SheetNumber=1
+Record=NoMainPathDocument|SourceDocument=MB_ADC.SchDoc|FileName=MB_Control.SchDoc|SheetNumber=7
+Record=NoMainPathDocument|SourceDocument=MB_ADC.SchDoc|FileName=MB_DAC.SchDoc|SheetNumber=5
+Record=NoMainPathDocument|SourceDocument=MB_ADC.SchDoc|FileName=MB_FPGA.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=MB_ADC.SchDoc|FileName=MB_Power.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=MB_ADC.SchDoc|FileName=MB_RF.SchDoc|SheetNumber=6

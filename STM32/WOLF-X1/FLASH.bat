@@ -1,0 +1,1 @@
+"C:\Program Files\STMicroelectronics\STM32Cube\STM32CubeProgrammer\bin\STM32_Programmer_CLI.exe" -c port=USB1 -d MDK-ARM/WOLF-X1.bin 0x08000000
